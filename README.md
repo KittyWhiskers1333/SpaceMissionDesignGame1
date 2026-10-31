@@ -2,6 +2,8 @@
 
 A browser-based 3D spacecraft design and mission adventure prototype. Built with HTML, CSS, JavaScript and Three.js.
 
+**Play the live demo:** https://kittywhiskers1333.github.io/SpaceMissionDesignGame1/
+
 ## Included
 - Cinematic-style home screen, story briefing and mission cards.
 - Ten randomly assigned mission storylines with distinct destinations, hazards, objectives and science instruments.
@@ -15,7 +17,7 @@ A browser-based 3D spacecraft design and mission adventure prototype. Built with
 
 ## Run locally
 This uses Three.js from a CDN, so internet access is required.
-1. Extract the ZIP.
+1. Download this repository as a ZIP and extract it.
 2. Open a terminal in the project folder.
 3. Run `python3 -m http.server 8000`
 4. Visit `http://localhost:8000`
@@ -23,11 +25,7 @@ This uses Three.js from a CDN, so internet access is required.
 You can also open `index.html` directly in a modern browser, but a local server is more reliable.
 
 ## Publish on GitHub Pages
-1. Create a GitHub repository named `orbit-foundry`.
-2. Upload `index.html`, `style.css`, `game.js`, and `README.md` to the repository root.
-3. Open Settings → Pages.
-4. Select Deploy from a branch → `main` → `/(root)` → Save.
-5. Wait for the Pages URL to appear.
+This repository is already published at https://kittywhiskers1333.github.io/SpaceMissionDesignGame1/. For a fork, open Settings → Pages, select Deploy from a branch, then choose the `main` branch and `/(root)` directory.
 
 ## Controls
 - Shipyard: drag the model to rotate, scroll to zoom, or use the rotation buttons.
@@ -47,5 +45,5 @@ This is an educational game prototype, not an engineering design tool. The space
 - Use glTF models and animations for a detailed cockpit, robotic arm, lander and instrument mechanisms.
 - Replace simplified motion with orbital mechanics and collision volumes.
 - Add mission-specific interaction minigames, science data visualizations and more nuanced repair procedures.
-- Save progress in browser storage or a backend; this prototype intentionally keeps progress in the current page session.
+- Completed missions and flight attempts persist in this browser via localStorage; progress is not synced across devices, and an active mission does not resume after reload.
 - Add accessibility options, subtitles, touch-specific flight controls, audio and reduced-motion settings.
